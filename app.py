@@ -7,8 +7,7 @@ import os
 # ----------------------------
 # Paths
 # ----------------------------
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))  
-MODEL_DIR = os.path.join(BASE_DIR, "Model")
+MODEL_DIR = "Model"
 
 # Load saved artifacts
 svm_model = joblib.load(os.path.join(MODEL_DIR, "breast_cancer_svm_model.pkl"))
